@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Blaka&family=Josefin+Sans:wght@300;400&family=Oleo+Script+Swash+Caps&family=Roboto:ital@1&family=Unbounded:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Mark-Torok-Homework</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <!-- css background img -->
+        </header>
+        <main class="">
+            <div class="oldalsav">
+                <nav>
+                    <li><a href="#balaton">Balaton</a></li>
+                    <li><a href="#tisza">Tisza-tó</a></li>
+                    <li><a href="#szelidi">Szelidi-tó</a></li>
+                </nav>
+                <hr>
+                <form action="/register" method="get">
+                    <label for="name">Teljes Név</label>
+                    <input id="name" name="name" type="text" placeholder="PL:Kovács Péter" required>
+                    <label for="email">E-mail cím</label>
+                    <input id="email" type="email" name="email" placeholder="PL:KovácsPéter.gmail.com" required>
+                    <label for="tel">Telefonszám</label>
+                    <input id="tel" type="tel" name="tel" placeholder="PL:0620-556-4187" required>
+                    <label for="to">Válassza ki a tavat </label>
+                    <select name="to" id="to" required>
+                        <option value="">--Melyik Tó Érdekli--</option>
+                        <option value="balaton">Balaton</option>
+                        <option value="tisza">Tisza-tó</option>
+                        <option value="szelidi">Szelidi-tó</option>
+                    </select>
+                    <label for="szallas">Milyen Szállást keres?</label>
+                    <select id="tobb" name="szallas" id="szallas" multiple>
+                        <option disabled value="">--A listáról Többet is választhat egyszerre(Ctrl+click)</option>
+                        <option value="szalloda">Szálloda</option>
+                        <option value="apartmanhaz">Apartmanház</option>
+                        <option value="kemping">Kemping</option>
+                    </select>
+                    <label for="teljes">Teljes Ellátás</label>
+                    <input type="radio" name="ellatas" id="teljes" value="teljes" checked>
+                    <label for="felpanzio">Fél Panzió</label>
+                    <input type="radio" name="ellatas" id="felpanzio" value="felpanzio">
+                    <label for="reggeli">Csak Reggeli</label>
+                    <input type="radio" name="ellatas" id="reggeli" value="csakReggeli">
+                    <label for="nem">Nem kér Ellátást</label>
+                    <input type="radio" name="ellatas" id="nem" value="nemkell">
+                    <textarea name="uzenet" id="uzenet" cols="30" rows="5"
+                        placeholder="Bármilyen kérdés vagy kérés kapcsán írjon ide ">
+                    </textarea>
+                    <div class="button-container">
+                        <button type="submit">Mehet</button>
+                    </div>
+                </form>
+            </div>
+            <section>
+                <h1 id="balaton">Balaton</h1>
+                <div class="content">
+                    <img class="section-kepek" src="img/balaton.jpg" alt="Balatoni táj">
+                    <p class="section-p">A Balaton Magyarország legnagyobb tava, amely a délnyugati országrészben, a
+                        Dunántúlon található. A tó hossza közel 80 kilométer, és átlagosan 7 kilométer széles. A Balaton
+                        egy népszerű turisztikai célpont, főként a nyári hónapokban, amikor a tó partján számos strand,
+                        üdülőhely és szálloda várja a látogatókat. A tó kristálytiszta vizében fürödni, vitorlázni,
+                        kajakozni vagy akár horgászni is lehet. A környék a természeti szépségeknek köszönhetően
+                        népszerű kirándulóhely is. Az Északi- és Dél-Balaton különböző látványosságokat kínálnak, az
+                        északi parton például számos borvidék található, míg a déli parton a Tihanyi-félsziget és a
+                        Balaton-felvidéki Nemzeti Park is megtalálható. A Balaton télen sem veszíti el varázsát, amikor
+                        a tó befagy és lehetőség nyílik korcsolyázásra vagy akár jégszörfözésre is. Összességében a
+                        Balaton egy csodálatos hely, amely a természeti szépségeivel és sokszínűségével mindig vonzza a
+                        turistákat.</p>
+                </div>
+            </section>
+
+            <section>
+                <h1 id="tisza">Tisza-tó</h1>
+                <div class="content">
+                    <img class="section-kepek" src="img/balaton.jpg" alt="Balatoni tájkép">
+                    <p class="section-p">A Tisza-tó egy mesterséges tó, amely a Tisza folyó árvízvédelmi rendszerének
+                        része, Magyarország északkeleti részén található. A tó hossza több mint 27 kilométer, és
+                        átlagosan 1,5 kilométer széles. A tópart nagyon változatos, tele van különféle növény- és
+                        állatfajokkal. A Tisza-tó a természet szerelmeseinek paradicsoma, ahol megfigyelhetik a ritka
+                        madárfajokat, mint például a halászsas vagy a fekete gólya. A tó vízén lehet kajakozni, kenuzni,
+                        vitorlázni, vagy akár horgászni is. A tó környéke kiváló kirándulóhely, ahol a látogatók
+                        megcsodálhatják a Tisza-tó és környékének lenyűgöző tájait, vagy akár meglátogathatják a közeli
+                        Tiszavirág Fesztivált, amely egy hagyományos magyar fesztivál. A Tisza-tó az év bármely szakában
+                        kiváló helyszín a pihenésre és a kikapcsolódásra.</p>
+                </div>
+            </section>
+            <section>
+                <h1 id="szelidi">Szelidi-tó</h1>
+                <div class="content">
+                    <img class="section-kepek" src="img/balaton.jpg" alt="Balatoni tájkép">
+                    <p class="section-p">A Szelidi-tó egy mesterséges tó a Duna-Tisza közén, Magyarország délkeleti
+                        részén található. A tó hossza körülbelül 4 kilométer, és átlagosan 1 kilométer széles. A
+                        Szelidi-tó környéke egy népszerű turisztikai célpont, amely kiváló lehetőséget kínál a
+                        pihenésre, a vízi sportokra és a kikapcsolódásra. A tó vize tiszta és friss, többféle halat és
+                        más vízi állatot találhatunk benne. A tó környékén számos piknikezőhely, játszótér és strand
+                        található. A Szelidi-tó a kempingezés és a sátorozás szerelmeseinek is ideális hely, mivel
+                        körülötte számos kemping és sátorozóhely található. A tó környékén számos kirándulóhely is
+                        található, köztük a Békás-szoros, a Tótkomlósi vár és a Dombóvári Történelmi Emlékhely.
+                        Összességében a Szelidi-tó egy kellemes és csendes hely, amely megfelelő kikapcsolódást kínál
+                        azok számára, akik a természet közelségében szeretnének feltöltődni.</p>
+                </div>
+            </section>
+
+        </main>
+        <footer>
+            <h1>footer</h1>
+        </footer>
+
+    </div>
+</body>
+
+</html>

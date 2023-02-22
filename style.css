@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Blaka', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Unbounded', cursive;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+label,
+input,
+select {
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 1.4em;
+}
+
+#tobb {
+    height: 5.5em;
+}
+
+textarea {
+    width: auto;
+    height: auto;
+}
+
+
+label {
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+    border: 2px solid #ddd;
+    background-color: #d7b520;
+    padding: 3% 5%;
+}
+
+header {
+    width: 100%;
+    margin: 0 auto;
+    height: 20vh;
+    border: 2px solid #ddd;
+    border-radius: 40px;
+    text-align: center;
+    margin-bottom: 3%;
+    background-image: url("img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.oldalsav {
+    height: auto;
+    width: 30%;
+    border: 2px solid white;
+    float: left;
+    margin-bottom: 10%;
+    min-width: 400px;
+}
+
+nav {
+    height: 100%;
+    font-weight: bold;
+}
+
+nav li {
+    height: 33.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li a {
+    border-bottom: 1px solid black;
+    padding: 0.1em 2em;
+    font-size: 2em;
+    color: #30373a;
+    transition: all 1s;
+}
+
+nav li a:hover {
+    border-bottom: 8px;
+    border-bottom-style: solid;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+
+hr {
+    height: 8px;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    margin-top: 20%;
+    margin-bottom: 25%;
+}
+
+form {
+    height: 45%;
+    border: 1px solid rgb(143, 141, 141);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-top: 15%;
+    padding: 4%;
+}
+
+.button-container {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.button-container button {
+    padding: 0.5em 2em;
+    background-color: rgb(27, 171, 27);
+    border-radius: 5px;
+    font-weight: bold;
+    color: #ddd;
+}
+
+
+section {
+    margin: 0 auto;
+    width: 60%;
+    height: 32%;
+    border: 2px solid #ddd;
+    border-radius: 40px;
+    float: right;
+    text-align: center;
+    padding: 10px 30px;
+    min-width: 600px;
+
+}
+
+.content {
+    margin: auto 0;
+    max-width: 1002px;
+    max-height: 320px;
+}
+
+.section-kepek {
+    min-width: 250px;
+    width: 31%;
+    float: left;
+    border-right: 4px solid greenyellow;
+    padding-right: 5px;
+}
+
+.section-p {
+    width: auto;
+    height: auto;
+    text-align: justify;
+    background-color: #fff;
+    font-size: 1em;
+    line-height: 20px;
+    letter-spacing: 1px;
+
+
+}
+
+section h1 {
+    margin: 0 auto;
+    margin-top: 1%;
+    width: 80%;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+section:nth-of-type(1) {
+    background-color: rgb(238, 202, 171);
+}
+
+section:nth-of-type(2) {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: rgb(222, 225, 160);
+}
+
+section:nth-of-type(3) {
+    background-color: rgb(203, 229, 222);
+}
+
+main {
+    height: auto;
+    width: 100%;
+    margin: 0 auto
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+footer {
+    width: 100%;
+    margin: 0 auto;
+    height: 10vh;
+    border: 2px solid #ddd;
+    border-radius: 40px;
+    text-align: center;
+    margin-top: 5%;
+    clear: both;
+
+
+}
+
+
+
+@media screen and (max-width: 2250px) {
+    section {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 2034px) {
+    section {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 1740px) {
+    .oldalsav {
+        margin-bottom: 20%;
+    }
+}
+
+@media screen and (max-width: 1524px) {
+    main {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    section {
+        line-height: 0.1em;
+        font-size: 0.5em;
+        margin-top: 7%;
+    }
+
+    section:nth-of-type(1) {
+        margin-top: 7%;
+    }
+
+    .oldalsav {
+        margin: 0 auto;
+    }
+}
+
+@media screen and(max-width:1340px) {
+    section {
+        min-width: 590px;
+    }
+}
